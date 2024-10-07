@@ -95,7 +95,7 @@ Here are some screenshots of the application's user interface:
 ![Patient List](public/examples/Example1.png)
 Figure 1: Patient List View
 
-![Add Patient Modal](public/examples/Example2.png)
+<img src="public/examples/Example2.png" alt="Add Patient Modal" width="500"/>
 Figure 2: Edit Patient Modal
 
 <img src="public/examples/Example3.png" alt="Mobile Patient List" width="300"/>
