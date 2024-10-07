@@ -87,3 +87,16 @@ This project utilizes the following key technologies:
 - Styled Components for component-based styling
 - Axios for making API calls
 - Formik with Yup for form management and validation
+
+## UI Views
+
+Here are some screenshots of the application's user interface:
+
+![Patient List](public/examples/patient-list.png)
+_Figure 1: Patient List View_
+
+![Add Patient Modal](public/examples/add-patient-modal.png)
+_Figure 2: Add Patient Modal_
+
+![Edit Patient Modal](public/examples/edit-patient-modal.png)
+_Figure 3: Edit Patient Modal_
