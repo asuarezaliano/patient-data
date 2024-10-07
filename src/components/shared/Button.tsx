@@ -4,7 +4,7 @@ import styled from 'styled-components';
 type typeStyle = 'default' | 'advance' | 'delete';
 
 interface ButtonProps {
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
   typeStyle?: typeStyle;
   disabled?: boolean;

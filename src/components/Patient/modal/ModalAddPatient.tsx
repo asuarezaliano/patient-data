@@ -7,6 +7,7 @@ import Input from '../../shared/Input';
 import { StyledModal, StyledForm, Title, ButtonContainer } from './ModalAddPatient.layout';
 import Button from '../../shared/Button';
 import TextArea from '../../shared/TextArea';
+import DropZone from '../../shared/DropZone';
 
 Modal.setAppElement('#root');
 
@@ -19,7 +20,7 @@ interface PatientModalProps {
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('Name is required').max(30, 'Name cannot exceed 30 characters'),
-  avatar: Yup.string().url('Must be a valid URL'),
+  avatar: Yup.string().required('Avatar is required'),
   description: Yup.string()
     .required('Description is required')
     .max(800, 'Description cannot exceed 800 characters'),
@@ -58,7 +59,7 @@ const PatientModal: React.FC<PatientModalProps> = ({
         {({ isSubmitting }) => (
           <StyledForm>
             <Input name="name" label="Name" type="text" />
-            <Input name="avatar" label="Avatar URL" type="text" />
+            <DropZone name="avatar" label="Avatar" />
             <TextArea name="description" label="Description" type="textarea" />
             <Input name="website" label="Website" type="text" />
             <ButtonContainer>

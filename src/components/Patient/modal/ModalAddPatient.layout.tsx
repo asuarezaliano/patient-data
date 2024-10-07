@@ -15,6 +15,13 @@ export const StyledModal = styled(Modal)`
   padding: 20px;
   border: 2px solid darkgray;
   box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   @media (max-width: 768px) {
     max-width: 95%;
     width: 95%;
@@ -31,6 +38,12 @@ export const StyledForm = styled(Form)`
 export const Title = styled.h2`
   text-align: center;
   margin-top: 10px;
+`;
+
+export const TitleContainer = styled.div`
+  background-color: #007bff;
+  width: 100%;
+  padding: 15px 0;
 `;
 
 export const ButtonContainer = styled.div`
