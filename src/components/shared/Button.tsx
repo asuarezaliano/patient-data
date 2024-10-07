@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-type typeStyle = 'default' | 'advance' | 'delete';
+type typestyle = 'default' | 'advance' | 'delete';
 
 interface ButtonProps {
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
-  typeStyle?: typeStyle;
+  typestyle?: typestyle;
   disabled?: boolean;
   [props: string]: any;
 }
 
-const StyledButton = styled.button<{ typeStyle: typeStyle }>`
+const StyledButton = styled.button<{ typestyle: typestyle }>`
   padding: 10px 20px;
   font-size: 16px;
   border: none;
@@ -21,8 +21,8 @@ const StyledButton = styled.button<{ typeStyle: typeStyle }>`
   width: 100%;
   margin-top: 10px;
   border: 1px solid ${({ theme }) => theme.colors.border};
-  ${({ typeStyle, theme }) => {
-    switch (typeStyle) {
+  ${({ typestyle, theme }) => {
+    switch (typestyle) {
       case 'advance':
         return `
           background-color: ${theme.colors.primary};
@@ -61,12 +61,12 @@ const StyledButton = styled.button<{ typeStyle: typeStyle }>`
 const Button: React.FC<ButtonProps> = ({
   onClick,
   children,
-  typeStyle = 'default',
+  typestyle = 'default',
   disabled = false,
   ...props
 }) => {
   return (
-    <StyledButton {...props} onClick={onClick} typeStyle={typeStyle} disabled={disabled}>
+    <StyledButton {...props} onClick={onClick} typestyle={typestyle} disabled={disabled}>
       {children}
     </StyledButton>
   );

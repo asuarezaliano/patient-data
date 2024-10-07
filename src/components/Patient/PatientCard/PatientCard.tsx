@@ -64,7 +64,7 @@ const PatientCard: React.FC<PatientCardProps> = React.memo(({ patient, onEditPat
           {expanded ? 'See less' : 'See more'}
         </ExpandButton>
       )}
-      <Button typeStyle="advance" onClick={() => onEdit(patient)}>
+      <Button typestyle="advance" onClick={() => onEdit(patient)}>
         Edit
       </Button>
     </Card>

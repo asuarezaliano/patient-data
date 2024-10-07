@@ -123,7 +123,7 @@ const DropZone: React.FC<DropZoneProps> = ({ name, label }) => {
             <ImagePreview src={previewUrl} alt="Preview" />
             <Button
               type="button"
-              typeStyle="delete"
+              typestyle="delete"
               onClick={e => {
                 e.stopPropagation();
                 handleRemove();
@@ -137,7 +137,7 @@ const DropZone: React.FC<DropZoneProps> = ({ name, label }) => {
             <DropZoneText>Drag and drop an image here, or</DropZoneText>
             <Button
               type="button"
-              typeStyle="advance"
+              typestyle="advance"
               onClick={e => {
                 e.stopPropagation();
                 openFileDialog();

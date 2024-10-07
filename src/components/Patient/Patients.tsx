@@ -84,7 +84,7 @@ export const Patients: React.FC = () => {
       <HeaderContainer>
         <StyledTitle>Patient List</StyledTitle>
         <ButtonContainer>
-          <Button onClick={() => handleOpenModal()} typeStyle="advance">
+          <Button onClick={() => handleOpenModal()} typestyle="advance">
             Add Patient
           </Button>
         </ButtonContainer>

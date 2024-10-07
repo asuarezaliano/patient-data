@@ -66,7 +66,7 @@ const PatientModal: React.FC<PatientModalProps> = ({
               <Button type="button" disabled={isSubmitting} onClick={onCloseModal}>
                 Cancel
               </Button>
-              <Button type="submit" disabled={isSubmitting} typeStyle="advance">
+              <Button type="submit" disabled={isSubmitting} typestyle="advance">
                 Send
               </Button>
             </ButtonContainer>
