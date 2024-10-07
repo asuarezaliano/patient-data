@@ -17,8 +17,8 @@
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/asuarezaliano/patient-data.git
+   cd patient-data
    ```
 
 2. Install dependencies:
@@ -46,7 +46,7 @@ This application was created to manage patient data efficiently. The design appr
 
 ### Memoization
 
-I use Memoization to optimize performance by preventing unnecessary re-renders of components. This is particularly important in a patient management system where the list of patients can grow large. I use memo on PatientCard and PatientList to memoize them so they only change when their props do, and use useCallback when passing a function to a child so it's memoized and doesn't cause a re-render every time. This helped me avoid loading each card every time I added a new patient or opened the modal.
+I used memoization to optimize performance by preventing unnecessary re-renders of components. This is particularly important in a patient management system where the list of patients can grow large. I use memo on PatientCard and PatientList to memoize them so they only change when their props do, and use useCallback when passing a function to a child so it's memoized and doesn't cause a re-render every time. This helped me avoid loading each card every time I added a new patient or opened the modal.
 
 Two key examples of memoization in this project are:
 
@@ -92,11 +92,14 @@ This project utilizes the following key technologies:
 
 Here are some screenshots of the application's user interface:
 
-![Patient List](public/examples/patient-list.png)
-_Figure 1: Patient List View_
+![Patient List](public/examples/Example1.png)
+Figure 1: Patient List View
 
-![Add Patient Modal](public/examples/add-patient-modal.png)
-_Figure 2: Add Patient Modal_
+![Add Patient Modal](public/examples/Example2.png)
+Figure 2: Edit Patient Modal
 
-![Edit Patient Modal](public/examples/edit-patient-modal.png)
-_Figure 3: Edit Patient Modal_
+<img src="public/examples/Example3.png" alt="Mobile Patient List" width="300"/>
+Figure 3: Mobile Patient List
+
+<img src="public/examples/Example4.png" alt="Mobile Add Patient Modal" width="300"/>
+Figure 4: Mobile Add Patient Modal
